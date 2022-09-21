@@ -1,6 +1,12 @@
+from flask import Flask
+import app
+
+
+@app.route('/')
+# ‘/’ URL is bound with hello_world() function.
 def main():
     # RUN LOCAL SERVER
-    pass
+    app.run()
 
 
 if __name__ == "__main__":
