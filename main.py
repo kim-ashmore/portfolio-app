@@ -1,11 +1,14 @@
 from flask import Flask
 import app
 
+# Flask constructor takes the name of
+# current module (__name__) as argument.
+app = Flask(__name__)
 
-@app.route('/')
-# ‘/’ URL is bound with hello_world() function.
+
 def main():
     # RUN LOCAL SERVER
+    # app = create_app()
     app.run()
 
 
